@@ -9,14 +9,14 @@ body {
   }
   
   .logo {
-    width: 30%;
+    width: 60%;
     height: 80%;
     margin: 3% 10%;
   }
   
   header {
-    /*display: grid;*/
-    grid-template-columns: 40% 60%;
+    display: grid;
+    grid-template-columns: 20% 80%;
     width: 100%;
   }
   
@@ -94,22 +94,32 @@ body {
   }
   
   /* Small and up (Landscape Phones) */
-@media (min-width: 576px) {
-body {
-  
+@media (max-width: 576px) {
+#profile-pic {
+  width: 225px;
+  height: 225px;
+}
+button {
+  width: 225px;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
 }
 
 /* Medium and up (Tablets) */
-@media (min-width: 768px) {
-
+@media (max-width: 768px) {
+h2 {
+  text-align: center;
 }
-
-/* Large and up (Desktops) */
-@media (min-width: 992px) {
-
+button {
+  text-align: center;
+  height: auto;
 }
-
-/* Extra Large and up (Wide Screen Desktops) */
-@media (min-width: 1200px) {
-
+body {
+  background-size: auto;
+}
+.logo {
+  align-content: center;
+  width: 80%;
+}
 }

@@ -112,31 +112,39 @@ h1 {
 } 
 
 body {
-    background: pink;
+    background: white;
 }
 
 main {
     background: #80FFFB;
     widows: 60%;
     margin: 20px 500px 20px 500px;
+    min-width: 500px;
+    justify-content: center;
 }
 
 article {
-    border: solid grey 2px;
-}
-
-article>h3 {
-    font-size: 25px;
-    margin-bottom: 5px;
+    border: double black 2px;
+    border-radius: 5px;
 }
 
 h3 {
     font-size: 35px !important;
+    padding-top: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: red;
+}
+
+h1:hover {
+    color:red;
 }
 
 h5 {
     font-style: italic;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 footer {
@@ -144,10 +152,12 @@ footer {
 }
 
 p:hover:first-letter {
-    font-size: 25px;
-    color: orange;
+    font-size: 40px;
+    color:red;
 }
 
 p {
     font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
